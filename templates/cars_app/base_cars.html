@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block page_title %}Моя автомобильная страница{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Автомобили</h1>
+        <nav>
+            <ul>
+                <li><a href="/cars/">Главная</a></li>
+                <li><a href="/cars/toyota/">Тойота</a></li>
+                <li><a href="/cars/honda/">Хонда</a></li>
+                <li><a href="/cars/renault/">Рено</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        &copy; 2023 Моя автомобильная компания
+    </footer>
+</body>
+</html>

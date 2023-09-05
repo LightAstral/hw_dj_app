@@ -1,0 +1,8 @@
+{% extends "day_of_week_app/base_days_of_week.html" %}
+
+{% block content %}
+    <h2>{{ current_day }}</h2>
+    <img src="data:image/jpeg;base64,{{ base64_image }}" alt="{{ current_day }}">
+
+
+{% endblock %}
